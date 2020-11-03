@@ -8,9 +8,13 @@ Clone this project, and modify file `config-sample.ini`(set dnspod-token and acc
 Install nginx & php(with fpm and curl modules)
 
 ## Step 3:
-Modify `nginx-sample.conf` and copy to `/path/to/nginx-config-dir/`. (Assume `ddns.your-domain.com` for IPv4 and `ddns6.your-domain.com` for IPv6)
+Run `composer install` to install dependencies, which will create the `vendor` folder. 
+If you don't have the `composer` tool, just download it from [vendor.tar.gz](https://github.com/ChaosJohn/ddns-dnspod/releases/download/vendor/vendor.tar.gz). 
 
 ## Step 4:
+Modify `nginx-sample.conf` and copy to `/path/to/nginx-config-dir/`. (Assume `ddns.your-domain.com` for IPv4 and `ddns6.your-domain.com` for IPv6)
+
+## Step 5:
 Restart or reload nginx
 
 # Usage
