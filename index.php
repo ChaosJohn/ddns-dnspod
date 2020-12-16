@@ -54,7 +54,7 @@ if ($curl->error) {
       $output['msg'] = 'Record.Modify Error' . $curl->errorCode . ': ' . $curl->errorMessage . "\n";
     } else {
       if (null != $response->status && null != $response->status->code && '1' == $response->status->code) {
-        $output['msg'] = 'Modification succeede';
+        $output['msg'] = 'Modification succeeded';
       } else {
         $output = $response;
         $output->action = 'Record.Modify';
